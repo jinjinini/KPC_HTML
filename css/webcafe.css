@@ -36,6 +36,26 @@ body{
 .main {
   background: blue;
   height: 60vh;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* 단축표기법 */
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 30px 15px;
+}
+.group1{
+  background: teal;
+  /* 배치순서 order: 1; */
+  width: 250px;
+}
+.group2{
+  background: tomato;
+  width: 380px;
+}
+.group3{
+  background: yellowgreen;
+  width: 190px;
 }
 /* 슬로건 */
 .slogan{
