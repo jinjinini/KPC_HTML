@@ -4,6 +4,16 @@
 *, *::before, *::after{
   box-sizing: border-box;
 }
+/* 숨김 컨테츠 */
+.a11y-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  /* 폴리곤 13번 즐겨찾기 */
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
 /* 링크스타일 나만의 패턴을 초기화 및 나만의 패턴적용*/
 a{
   /* 부모로부터 상속 값의 색을 지정하겠다 */
