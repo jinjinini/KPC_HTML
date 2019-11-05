@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 @import url("./normalize.css");
+@import url("./fontello.css");
 *, *::before, *::after{
   box-sizing: border-box;
 }
@@ -14,7 +15,7 @@
   /* 폴리곤 13번 즐겨찾기 */
   clip-path: polygon(0 0, 0 0, 0 0);
 }
-/* 링크스타일 나만의 패턴을 초기화 및 나만의 패턴적용*/
+/* 링크스타일 나만의 패턴(자주쓰는)을 초기화 및 나만의 패턴적용*/
 a{
   /* 부모로부터 상속 값의 색을 지정하겠다 */
   color: inherit;
@@ -23,7 +24,7 @@ a{
 }
 /* a라는 요소가 포커싱을 당했을때 */
 a:focus{
-  box-shadow: 0 0 5px 1px red;
+  box-shadow: 0 0 5px 1px #296897;
 }
 html{
   font-size: 10px;
@@ -44,26 +45,23 @@ body{
   margin: 0 auto;
 }
 .logo{
-  background: blue;
   margin-top: 0;
   margin-bottom: 0;
   position: absolute;
-  left: 35px;
-  top: 50px;
+  left: 60px;
+  top: 45px;
 }
 /* 멤버 링크 */
 .member {
   margin: 0 23px 0 30px;
   padding-left: 0;
   list-style-type: none;
-  background: pink;
   text-align: right;
   font-size: 0;
 }
 
 .member li, .member a{
-  display: inline-block;
-  background: lime;
+  display: inline-block;;
 }
 .member li{
   font-size: 1.4rem;
@@ -72,22 +70,97 @@ body{
 }
 .member a{
   padding: 0.5em;
-  background: skyblue;
   text-transform: uppercase;
 }
+.navigation{
+  padding-bottom: 32px;
+}
+/* 메인 메뉴 */
+.menu {
+  height: 49px;
+  background: rgb(246,111,14);
+  background: linear-gradient(180deg, rgba(246,111,14,1) 0%, rgba(245,85,4,1) 35%, rgba(245,85,4,1) 70%, rgba(246,111,14,1) 100%);
+  margin: 0 30px;
+  padding-left: 230px;
+  border-top: 2px solid #000;
+  border-radius: 1em;
+  /* 앞에 쩜 표시 삭제 list-style: none;*/
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+}
+.menu-item{
+  float: left;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+
+}
+.btn-menu{
+  display: block;
+  padding: 1em 1.45em;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* 네온사인효과 활용가능 */
+  text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000,0 -1px 0 #000;
+
+}
+.btn-menu:focus{
+  box-shadow: initial;
+}
+/* 동적인 클래스 */
+.menu-act .btn-menu{
+  color: #ff0;
+}
+/* after 가상요소를 통한 검은색 바 디자인 */
+.menu-act .btn-menu::after{
+  content: "";
+  display: block;
+  border-top: 2px solid #181818;
+  position: relative;
+  top: 1em;
+  /* border-bottom: 2px solid #181818; */
+}
+.sub-menu{
+  display: none;
+  position: absolute;
+  padding-left: 0;
+  list-style: none;
+  top: 49px;
+  white-space: nowrap;
+}
+.sub-menu1, .sub-menu2, .sub-menu3{
+  left: 0;
+
+}
+.sub-menu4, .sub-menu5, .sub-menu6{
+  right: 0;
+
+}
+.menu-act .sub-menu{
+  display: block;
+}
+.sub-menu li, .sub-menu a{
+  display: inline-block;
+}
+.sub-menu a{
+  /* background: pink; */
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
 /* 헤더 */
 .header {
   background: #fff;
   position: relative;
   /* 10vh <<< 화면의 10프로 */
+  border-radius: 0 0 15px 15px;
+  padding-bottom: 5px;
 }
 .visual{
-  background: orange;
-  height: 10vh;
+  height: 120px;
 }
 /* 메인컨텐츠 */
 .main {
-  background: blue;
+  background: #fff;
   /* height: 60vh; */
   /* flex-direction: row; */
   /* flex-wrap: wrap; */
@@ -98,6 +171,7 @@ body{
   justify-content: space-around; */
   padding: 30px 15px;
   overflow: hidden;
+  border-radius: 15px 15px 0 0;
 }
 .group{
   float: left;
