@@ -4,6 +4,17 @@
 *, *::before, *::after{
   box-sizing: border-box;
 }
+/* 링크스타일 나만의 패턴을 초기화 및 나만의 패턴적용*/
+a{
+  /* 부모로부터 상속 값의 색을 지정하겠다 */
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+/* a라는 요소가 포커싱을 당했을때 */
+a:focus{
+  box-shadow: 0 0 5px 1px red;
+}
 html{
   font-size: 10px;
 }
@@ -16,15 +27,48 @@ body{
 }
 /* 컨테이너 */
 .container{
-  background: silver;
+  background: #aaa;
 }
 .header, .visual, .main, .slogan, .footer{
   width: 940px;
   margin: 0 auto;
 }
+.logo{
+  background: blue;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  left: 35px;
+  top: 50px;
+}
+/* 멤버 링크 */
+.member {
+  margin: 0 23px 0 30px;
+  padding-left: 0;
+  list-style-type: none;
+  background: pink;
+  text-align: right;
+  font-size: 0;
+}
+
+.member li, .member a{
+  display: inline-block;
+  background: lime;
+}
+.member li{
+  font-size: 1.4rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.member a{
+  padding: 0.5em;
+  background: skyblue;
+  text-transform: uppercase;
+}
 /* 헤더 */
 .header {
-  background: yellow;
+  background: #fff;
+  position: relative;
   /* 10vh <<< 화면의 10프로 */
 }
 .visual{
