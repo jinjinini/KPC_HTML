@@ -26,7 +26,6 @@ body{
 .header {
   background: yellow;
   /* 10vh <<< 화면의 10프로 */
-  height: 10vh;
 }
 .visual{
   background: orange;
