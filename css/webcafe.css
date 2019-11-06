@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 /* 숨김 컨테츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -245,21 +245,91 @@ body{
   min-height: 400px;
 }
 .group1{
-  background: teal;
+  /* background: teal; */
   /* 배치순서 order: 1; */
   width: 250px;
 
 }
 .group2{
-  background: tomato;
+  /* background: tomato; */
   width: 380px;
 
 }
 .group3{
-  background: yellowgreen;
+  /* background: yellowgreen; */
   width: 190px;
   
 }
+.login-heading{
+  /* display: block;
+  padding: 1em 1em;
+  margin: 0 0 -1em 0.5em; */
+  color: yellow;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 10px;
+}
+.login{
+  background: radial-gradient(circle at right top, rgb(253, 128, 38),
+   rgba(245,85,4,1));
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 grey;
+  padding: 10px 10px;
+}
+.login-form{
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+.login-form fieldset{
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #aaa;
+  position: relative;
+  padding-bottom: 5px;
+}
+.user-email, .user-pw{
+  margin-bottom: 5px;
+}
+[for="userEmail"],[for=userPw]{
+  display: inline-block;
+  width: 4em;
+}
+[name="userId"],[name="userPwd"]{
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 0 0.5em;
+}
+.btn-login{
+  position: absolute;
+  background: radial-gradient(circle at right top, rgb(253, 128, 38),
+   rgba(245,85,4,1));
+  top: 0;
+  right: 0;
+  width: 55px;
+  height: 55px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0;
+}
+.sign{
+  background: #fff;
+  padding: 10px 10px 10px 5px;
+  border-radius: 0 0 5px 5px;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.sign a::before{
+  color: rgb(212,92,24);
+}
+/* 로그인 */
+/* 유효성 검사 배너 */
+/* 웹 관련 용어 */
 /* 슬로건 */
 .slogan{
   background: lime;
