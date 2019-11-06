@@ -347,15 +347,30 @@ body{
   background: url("./images/validation_icon.png") no-repeat 20px 50%, linear-gradient(rgb(139, 139, 139),rgb(204, 202, 202) 100%);
   padding-left: 45px; 
 }
-.validation-list li, .validation-list a{
-  /* background: #aaa linear-gradient(rgb(139, 139, 139),rgb(204, 202, 202) 100%);
+/* .validation-list li, .validation-list a{
+  background: #aaa linear-gradient(rgb(139, 139, 139),rgb(204, 202, 202) 100%);
   border-radius: 15px;
   display: inline-block;
   padding: 5px;
-  width: 250px; */
-}
+  width: 250px;
+} */
 
 /* 웹 관련 용어 */
+/* .etc{
+  background: linear-gradient(rgb(139, 139, 139),rgb(204, 202, 202) 100%);
+  border-radius: 10px;
+}
+.etc-title{
+ padding: 20px;
+}
+.etc-list{
+  background: url("/images/web_standards.gif") no-repeat 20px 50%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.etc-list li{
+  list-style: none;
+} */
 /* 슬로건 */
 .slogan{
   background: lime;
