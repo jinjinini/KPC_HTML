@@ -62,7 +62,7 @@ body{
 }
 
 .member li, .member a{
-  display: inline-block;;
+  display: inline-block;
 }
 .member li{
   font-size: 1.4rem;
@@ -329,6 +329,32 @@ body{
 }
 /* 로그인 */
 /* 유효성 검사 배너 */
+.validation-list{
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-left: 0;
+  
+  /* margin: 10px; */
+}
+.validation-list a{
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  line-height: 30px;
+  height: 30px;
+  margin: 10px 0;
+  background: url("./images/validation_icon.png") no-repeat 20px 50%, linear-gradient(rgb(139, 139, 139),rgb(204, 202, 202) 100%);
+  padding-left: 45px; 
+}
+.validation-list li, .validation-list a{
+  /* background: #aaa linear-gradient(rgb(139, 139, 139),rgb(204, 202, 202) 100%);
+  border-radius: 15px;
+  display: inline-block;
+  padding: 5px;
+  width: 250px; */
+}
+
 /* 웹 관련 용어 */
 /* 슬로건 */
 .slogan{
