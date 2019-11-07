@@ -451,6 +451,72 @@ body{
   padding: 0 0.85em;
 }
 /* 공지사항 및 자료실 */
+.board{
+  margin-top: 20px;
+  position: relative;
+  padding-top: 45px;
+}
+.notice-list, .notice-more,.pds-list,.pds-more{
+  display: none;
+}
+.tab-act .notice-list, .tab-act .notice-more,
+.tab-act .pds-list, .tab-act .pds-more{
+  display: block;
+}
+.tab{
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+}
+.tab-act .tab{
+  z-index: 10;
+}
+.pds-heading{
+  left: 80px;
+
+}
+.tab a{
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5em 1em;
+  color: #666;
+  background: #ccc linear-gradient(#ccc,#eee);
+}
+.tab-act .tab a{
+  color: rgb(212,92,24);
+  border-color: rgb(212,92,24) rgb(212,92,24) transparent;
+  background: #fff;
+}
+.notice-list, .pds-list{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.notice-list li, .pds-list li{
+  margin: 0.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.notice-list a, .pds-list a{
+  width: 305px;
+  /* 줄바꿈 방지 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notice-more, .pds-more{
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  padding: 0.5em;
+}
+.notice-more::before, .pds-more::before{
+  color: hsl(110,50%,30%);
+}
 /* 새소식 */
 /* 슬로건 */
 .slogan{
